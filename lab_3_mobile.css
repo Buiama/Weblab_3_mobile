@@ -1,0 +1,208 @@
+::selection {
+  color: red;
+  background: gold;
+}
+
+body {
+	margin: 0;
+	font-family: Vernanda;
+	font-size: 2vh;
+}
+
+.theadfoot {
+	min-height: 20vh;
+	background: linear-gradient(to right, #6DABE8, #ACE7FF, #6DABE8);
+	background-repeat: no-repeat;
+}
+.hf {
+	background-color: #ACE7FF;
+
+}
+p:first-letter {
+	color: red;
+	font-size: 3.5vh;
+	font-family: "Arial";
+}
+
+.second {
+	background-color: navajowhite;
+	overflow-wrap: break-word;
+}
+.third {
+	background-color: lightgray;
+	overflow-wrap: break-word;
+}
+.bottom {
+	background-color: #A3E6BE;
+	overflow-wrap: break-word;
+}
+.right {
+	color: white;
+	background-color: #568CC7;
+	overflow-wrap: break-word;
+}
+
+.link {
+	margin-right: 2vw;
+	padding: 1vh;
+	line-height: 3;
+	border-radius: 10vh;
+	transition-duration: 0.5s;
+}
+.link:hover {
+	color: white;
+	background: violet;
+}
+.link:focus {
+	color: white;
+	background: darkviolet;
+}
+
+
+
+@media (min-aspect-ratio: 1/1) {
+	
+	body {
+		display: table;
+		min-height: 100vh;
+		text-align: right;
+	}
+	
+	header {
+		display: table-header-group;
+	}
+	.headfoot, .first {
+		display: table-cell;
+		height: 20vh;
+		vertical-align: middle;
+		overflow-wrap: break-word;
+	}
+	.headfoot {
+		width: 55vw;
+	}
+	.hf {
+		min-width: 20%;
+		max-width: 36.5%;
+		margin-left: 3vw;
+		padding-top: 0.1vh;
+		padding-bottom: 0.1vh;
+		padding-right: 1vw;
+		padding-left: 1vw;
+	}
+	.first {
+		width: 45vw;
+	}
+	p {
+		margin-left: 1vw;
+		margin-right: 1vw;
+	}
+	
+	main {
+		display: table-row-group;
+		width: 100vw;
+		background-color: #A3E6BE;
+	}
+	.left, .right {
+		display: table-cell;
+	}
+	.top {
+		display: table-row;
+	}
+	.second, .third {
+		display: table-cell;
+		height: 45vh;
+		width: 70vw;
+		vertical-align: middle;
+	}
+	.second {
+		width: 30%;
+	}
+	.right {
+		height: 60vh;
+		width: 30vw;
+		vertical-align: middle;
+	}
+	.bottom {
+		display: table;
+		height: 15%;
+		width: 70vw;
+		vertical-align: middle;
+		text-align: left;
+	}
+	footer {
+		display: table-footer-group;
+	}
+	.foot {
+		text-align: left;
+	}
+
+	ol.fruits-list {
+		color: indigo;
+		font-weight: normal;
+	}
+	ol.vegetables-list {
+		color: red;
+		font-weight: normal;
+	}
+	.tmpS {
+		float: right;
+		text-align: left;
+	}
+	[href*="https:"] { color: darkgreen; }
+	[target] {color: darkgreen;}
+	[href$="google.com"] { color: #667; }
+	[target]::after {
+	    content: '\21F1';
+	    display: inline-block;
+	    transform: rotate(90deg);
+	    color: red;
+	}
+	.icon {
+		height: 60%;
+		width:  15vw;
+		float: right;
+	}
+}
+
+
+
+@media (max-aspect-ratio: 1/1) {
+	.headfoot {
+		display: inline-block;
+		overflow-wrap: break-word;
+	}
+	.first {
+		margin-left: 15vw;
+		text-align: right;
+		padding-top: 1vh;
+		padding-bottom: 2vh;
+	}
+	p{
+		margin: 0;
+		padding-top: 1vh;
+		margin-left: 2vw;
+		margin-right: 2vw;
+		padding-bottom: 2vh;
+	}
+	h1 {
+		margin: 0;
+		padding: 1vw;
+	}
+	.second {
+		min-height: 25vh;
+	}
+	.third {
+		min-height: 7vh;
+		display: flex;
+		justify-content: space-evenly;
+		flex-wrap: wrap;
+		align-items: center;
+	}
+	.bottom {
+		min-height: 15vh;
+	}
+	.right {
+		min-height: 20vh;
+		text-align: right;
+	}
+}
