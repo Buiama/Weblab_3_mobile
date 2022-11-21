@@ -183,7 +183,7 @@ p:first-letter {
 		margin-left: 2vw;
 		margin-right: 2vw;
 		padding-bottom: 2vh;
-		font-size: 1px;
+		font-size: 0.2vh;
 	}
 	h1 {
 		margin: 0;
